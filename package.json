@@ -6,7 +6,9 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "tsx --env-file=.env --watch ./src/index.ts --watch .env",
-		"build": "tsc"
+		"build": "tsc",
+		"lint": "biome check --write ./src",
+		"lint:fix": "biome check  --write --unsafe ./src "
 	},
 	"keywords": [],
 	"author": "",
